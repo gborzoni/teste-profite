@@ -238,7 +238,6 @@ module.exports = function(grunt) {
    * run `grunt`
    */
   grunt.registerTask('default', [
-    //'jshint',           // JShint
     'concat:js',        // Concatenate main JS files
     'uglify',           // Minifiy concatenated JS file
     'sass:dev',         // Compile Sass with dev settings
@@ -250,7 +249,6 @@ module.exports = function(grunt) {
    * run `grunt production`
    */
   grunt.registerTask('production', [
-    //'jshint',           // JShint
     'concat:js',        // Concatenate main JS files
     'uglify',           // Minifiy concatenated JS file
     'sass:dist',        // Compile Sass with distribution settings

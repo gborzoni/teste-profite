@@ -10,13 +10,18 @@ body {
     text-rendering: optimizeLegibility;
 
     .wrapper {
+        width: 100%;
         max-width: 985px;
         margin: auto;
         padding: 0 20px; 
+        background-image: url();
     }
 }
 
 a {
     color: $black;
     text-decoration: none;
+}
+
+.fullGallery {
 }

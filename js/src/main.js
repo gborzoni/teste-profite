@@ -66,15 +66,128 @@ var global = {
     },
 }
 
+var slider = {
+    commonSlider: function (element) {
+        element.slick({
+            dots: true,
+            arrows: false,
+            pauseOnHover: false,
+            autoplay: false,
+            autoplaySpeed: 6000,
+            mobileFirst:true,			
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<i class="ico-arrow slick-prev"></i>',
+            nextArrow: '<i class="ico-arrow slick-next"></i>',
+            responsive: [
+                {
+                    breakpoint: 768,
+					settings: {
+						arrows: true,
+					}
+                }
+            ]
+            
+        });
+    },
+
+    shelfSlider: function () {
+        $('.has-carroussel ul').slick({
+            dots: true,
+            arrows: false,
+            pauseOnHover: false,
+            autoplay: false,
+            autoplaySpeed: 6000,
+            mobileFirst:true,			
+			infinite: false,
+			slidesToShow: 2,
+			slidesToScroll: 2,
+			prevArrow: '<i class="ico-arrow slick-prev"></i>',
+            nextArrow: '<i class="ico-arrow slick-next"></i>',
+            responsive: [
+                {
+                    breakpoint: 768 - 1,
+					settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+					}
+                },{
+                    breakpoint: 968,
+                    settings: {
+                        arrows: true,
+                        dots: false,
+                        slidesToShow: 4,
+                        slidesToScroll: 4
+                    }
+                }
+            ]
+        });
+    },
+
+
+}
+
 var home = {
     init: function() {
+        home.getBanners();
         home.getProduct();
     },
 
+    getBanners: function() {
+        fns.loadJSON("https://raw.githubusercontent.com/gborzoni/teste-profite/master/ajax/banner.json",function(data){
+            var response = JSON.parse(data);
+            
+            $.each(response, function(index, value){
+                var bannerHtml = '<div class="box-banner" style="background-image: url(img/'+response[index].banner+')">';
+                        bannerHtml += '<div class="banner-wrap">';
+                            bannerHtml += '<h2>' + response[index].texto + '</h2>';
+                        bannerHtml += '</div>'
+                    bannerHtml += '</div>'
+
+                $('#home-full-gallery ').append(bannerHtml);
+            })
+
+            slider.commonSlider($("#home-full-gallery"))
+        })
+    },
+
     getProduct: function() {
-        fns.loadJSON("product.json",function(data){
-            var json = JSON.parse(data);
-            console.log(data);
+        fns.loadJSON("https://raw.githubusercontent.com/gborzoni/teste-profite/master/ajax/product.json",function(data){
+            var response = JSON.parse(data);
+            
+            var shelfHtml = '<ul class="profite-shelf">';
+            $.each(response, function(index, value){
+                    shelfHtml += '<li class="shelf-product" data-id="'+response[index].id+'">'
+                        shelfHtml += '<div class="flag-group">';
+                            if(response[index].off) {
+                                shelfHtml += '<div class="flag off"> <span>OFF</span> </div>';
+                            }
+                        shelfHtml += '</div>';
+                        shelfHtml += '<div class="product-image">';
+                            shelfHtml += '<a href="#">';
+                                shelfHtml += '<img src="'+response[index].img+'" alt="">';
+                            shelfHtml += '</a>';
+                        shelfHtml += '</div>';
+                        shelfHtml += '<div class="product-info">';
+                            shelfHtml += '<div class="product-name">'+response[index].titulo+'</div>';
+                            shelfHtml += '<div class="product-review avaliacao'+response[index].avaliacao+'"></div>';
+                            shelfHtml += '<div class="product-price">';
+                                shelfHtml += '<div class="list-price">'+response[index].precoDe+'</div>';
+                                shelfHtml += '<div class="best-price">'+response[index].precoPor+'</div>';
+                                shelfHtml += '<div class="installment">'+response[index].precoOu+'</div>';
+                            shelfHtml += '</div>';
+                            shelfHtml += '<div class="shelf-buy">';
+                                shelfHtml += '<a class="btn-shelf"><i class="ico-cart-add"></i> Comprar</a>'
+                            shelfHtml += '</div>';
+                        shelfHtml += '</div>';
+                    shelfHtml += '</li>';
+            })
+            shelfHtml += '</ul>';
+
+            $('.has-carroussel').append(shelfHtml);
+
+            slider.shelfSlider();
         })
     }
 }

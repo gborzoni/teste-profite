@@ -1,14 +1,13 @@
 {
   "name": "grunt-project",
-  "title": "A simple Grunt project",
-  "description": "A basic Grunt project to get started.",
+  "title": "Profit-e teste de layout",
+  "description": "Profit-e teste de layout.",
   "version": "0.1.0",
-  "homepage": "http://markgoodyear.com",
+  "homepage": "https://github.com/gborzoni/teste-profite",
   "author": {
-    "name": "Mark Goodyear",
-    "url": "http://markgoodyear.com"
+    "name": "Guilherme Borzoni",
+    "url": "https://github.com/gborzoni/teste-profite"
   },
-  "license": "MIT",
   "engines": {
     "node": ">=0.10.3"
   },
