@@ -34,4 +34,22 @@
     "off": true,
     "avaliacao": 45,
     "img": "./img/img-product-01.png"
+}, {
+    "id": 5,
+    "titulo": "Tenis da Nike",
+    "precoDe": "de R$ 229,00",
+    "precoPor": "por R$ 119,00",
+    "precoOu": "ou em 8x de R$ 10,00",
+    "off": true,
+    "avaliacao": 25,
+    "img": "./img/img-product-01.png"
+}, {
+    "id": 6,
+    "titulo": "Tenis da Nike",
+    "precoDe": "",
+    "precoPor": "por R$ 119,00",
+    "precoOu": "ou em 8x de R$ 10,00",
+    "off": false,
+    "avaliacao": 35,
+    "img": "./img/img-product-01.png"
 }]
