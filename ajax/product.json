@@ -5,7 +5,7 @@
     "precoPor": "R$ 200,00",
     "precoOu": "ou em 8x de R$ 25,00",
     "off": false,
-    "avaliacao": 3,
+    "avaliacao": 30,
     "img": "./img/img-product-01.png"
 }, {
     "id": 2,
@@ -14,16 +14,16 @@
     "precoPor": "por R$ 19,00",
     "precoOu": "ou em 8x de R$ 10,00",
     "off": true,
-    "avaliacao": 1,
+    "avaliacao": 20,
     "img": "./img/img-product-01.png"
 }, {
     "id": 3,
     "titulo": "Tenis da Vans",
     "precoDe": "",
-    "precoPor": "por R$ 339,00",
+    "precoPor": "R$ 339,00",
     "precoOu": "ou em 8x de R$ 45,00",
     "off": false,
-    "avaliacao": 5,
+    "avaliacao": 50,
     "img": "./img/img-product-01.png"
 }, {
     "id": 4,
@@ -32,6 +32,6 @@
     "precoPor": "por R$ 119,00",
     "precoOu": "ou em 8x de R$ 10,00",
     "off": true,
-    "avaliacao": 4,
+    "avaliacao": 45,
     "img": "./img/img-product-01.png"
 }]
