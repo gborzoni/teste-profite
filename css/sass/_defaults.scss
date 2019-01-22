@@ -1,0 +1,84 @@
+//--------------------------------------*\
+//  Defaults
+//--------------------------------------*/
+
+// Use Sass comments for this file to prevent output to top of
+// development compiled .css
+
+
+//--------------------------------------*\
+// Colors
+//--------------------------------------*/
+
+// Brand colours
+$brand-primary:   #111111;
+$brand-secondary: #222222;
+$brand-tertiary:  #333333;
+
+// Grays
+$gray-light:      #eeeeee;
+$gray-med:        #aaaaaa;
+$gray-dark:       #cccccc;
+
+// Black & white
+$black:           #000;
+$white:           #fff;
+
+$color-1:         #7A7A7A;
+$color-2:         #2EC4B6;
+$color-3:         #011627;
+$color-4:         #FF9F1C;
+
+//--------------------------------------*\
+// Base Type
+//--------------------------------------*/
+
+// Define font stacks
+$font-primary:    "Ubuntu", sans-serif;
+$font-secondary:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Base font sizes
+$base-font-size:    16px!default;
+$base-line-height:  24px!default;
+
+// Big sizes
+$giga-size:         96px!default;
+$mega-size:         72px!default;
+$kilo-size:         48px!default;
+
+// Heading sizes
+$h1-size:           36px!default; // .alpha
+$h2-size:           30px!default; // .beta
+$h3-size:           24px!default; // .gamma
+$h4-size:           20px!default; // .delta
+$h5-size:           16px!default; // .epsilon
+$h6-size:           14px!default; // .zeta
+
+// Small sizes
+$milli-size:        12px!default;
+$micro-size:        10px!default;
+
+
+//--------------------------------------*\
+// Project Globals
+//--------------------------------------*/
+
+// Border radius
+$global-radius:     5px;
+
+//----------------------
+
+//DEFINES BREAKPOINTS
+
+//-----------------------
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;

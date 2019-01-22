@@ -1,0 +1,37 @@
+[{
+    "id": 1,
+    "titulo": "Tenis da adidas",
+    "precoDe": "",
+    "precoPor": "R$ 200,00",
+    "precoOu": "ou em 8x de R$ 25,00",
+    "off": false,
+    "avaliacao": 3,
+    "img": "./img/img-product-01.png"
+}, {
+    "id": 2,
+    "titulo": "Tenis da Converse",
+    "precoDe": "de R$ 59,00",
+    "precoPor": "por R$ 19,00",
+    "precoOu": "ou em 8x de R$ 10,00",
+    "off": true,
+    "avaliacao": 1,
+    "img": "./img/img-product-01.png"
+}, {
+    "id": 3,
+    "titulo": "Tenis da Vans",
+    "precoDe": "",
+    "precoPor": "por R$ 339,00",
+    "precoOu": "ou em 8x de R$ 45,00",
+    "off": false,
+    "avaliacao": 5,
+    "img": "./img/img-product-01.png"
+}, {
+    "id": 4,
+    "titulo": "Tenis da Nike",
+    "precoDe": "de R$ 229,00",
+    "precoPor": "por R$ 119,00",
+    "precoOu": "ou em 8x de R$ 10,00",
+    "off": true,
+    "avaliacao": 4,
+    "img": "./img/img-product-01.png"
+}]

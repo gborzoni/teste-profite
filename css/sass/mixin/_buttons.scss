@@ -1,0 +1,17 @@
+@mixin btn-primary {
+    padding: 0 12px;
+    color: $white;
+    background: $color-4;
+    border-radius: $global-radius;
+    font-size: 12px;
+    text-transform: uppercase;
+    i {
+        width: 20px;
+        margin-right: 18px;
+        font-size: 14px;
+        text-align: center;
+    }
+    span {
+        flex: 1;
+    }
+}
